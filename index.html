@@ -4,34 +4,46 @@
   <meta charset="UTF-8">
   <title>Happy Birthday, Liam!</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #ffeeff; color: #333; margin: 0; padding: 0; }
-    header { background: #ffccdd; padding: 20px; text-align: center; }
-    h1 { margin: 0; color: #cc3366; }
-    #song-btn { margin: 20px; padding: 10px 20px; background: #ff99bb; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2em; }
-    section { padding: 20px; }
-    .place { background: white; margin: 10px 0; padding: 15px; border-radius: 6px; }
+    body { font-family: 'Segoe UI', sans-serif; background: #e0f7ff; color: #222; margin: 0; padding: 0; }
+    header { background: #a3dfff; padding: 20px; text-align: center; }
+    h1 { margin: 0; color: #006699; font-size: 3em; }
+    #song-btn { margin: 20px; padding: 12px 24px; background: #66ccff; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2em; color: white; }
+    section { padding: 20px; max-width: 800px; margin: auto; }
+    h2 { color: #004466; }
+    .place { background: white; margin: 10px 0; padding: 15px; border-radius: 6px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
+    audio { display: none; }
   </style>
 </head>
 <body>
   <header>
     <h1>Happy Birthday, Liam!</h1>
-    <button id="song-btn">🎶 Play Birthday Song</button>
+    <button id="song-btn">🎶 Play "Secret Tunnel"</button>
+    <audio id="birthday-audio" controls>
+      <source src="https://uploadthing.com/f/secret-tunnel.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </header>
+
   <section>
-    <h2>Orlando Adventures Await!</h2>
-    <div class="place"><strong>Sandbox VR Orlando</strong> – advanced group VR action</div>
-    <div class="place"><strong>Main Event Entertainment</strong> – arcade + multiple VR games</div>
-    <div class="place"><strong>Max Action Arena @ Icon Park</strong> – free-roam VR experiences</div>
-    <div class="place"><strong>Andretti Indoor Karting & Games</strong> – karting, arcade, VR</div>
-    <div class="place"><strong>The Escape Game Orlando</strong> – VR escape-room missions</div>
-    <div class="place"><strong>Lake Eola Park</strong> – scenic downtown green space</div>
-    <div class="place"><strong>Gatorland</strong> – wildlife park with zip-lines and gators</div>
-    <div class="place"><strong>Icebar Orlando</strong> – chilled-out ice bar experience</div>
+    <h2>Cool Places to Explore in Orlando</h2>
+
+    <div class="place"><strong>ICON Park</strong> – Giant wheel, shops, and restaurants. Super fun place to explore with friends.</div>
+    <div class="place"><strong>Lake Eola Park</strong> – Beautiful downtown lake with swan boats and live events.</div>
+    <div class="place"><strong>Universal CityWalk</strong> – No ticket needed to hang out, get food, and catch music or shows.</div>
+    <div class="place"><strong>Gatorland</strong> – Classic Florida spot with gators, zip lines, and animal shows.</div>
+    <div class="place"><strong>Orlando Science Center</strong> – Interactive exhibits, planetarium, and more for curious minds.</div>
+    <div class="place"><strong>The Florida Mall</strong> – Giant indoor mall with tons of stores and food spots.</div>
+    <div class="place"><strong>Andretti Indoor Karting</strong> – Go-karts, arcade, bowling, and yes—VR!</div>
+    <div class="place"><strong>Icebar Orlando</strong> – Literally a frozen bar where everything’s made of ice (don't lick the walls).</div>
+    <div class="place"><strong>Wekiwa Springs</strong> – Chill natural springs just outside the city—perfect for swimming and relaxing.</div>
   </section>
+
   <script>
     document.getElementById('song-btn').addEventListener('click', () => {
-      alert("🎂 This will play the birthday song! (To be implemented)");
+      const audio = document.getElementById('birthday-audio');
+      audio.play();
     });
   </script>
 </body>
 </html>
+
