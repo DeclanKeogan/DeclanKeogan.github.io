@@ -10,8 +10,11 @@
     #song-btn { margin: 20px; padding: 12px 24px; background: #66ccff; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2em; color: white; }
     section { padding: 20px; max-width: 800px; margin: auto; }
     h2 { color: #004466; }
-    .place { background: white; margin: 10px 0; padding: 15px; border-radius: 6px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
+    .place-btn { background: #ffffff; border: 2px solid #66ccff; padding: 12px; border-radius: 6px; cursor: pointer; width: 100%; margin: 10px 0; font-size: 1.1em; text-align: left; }
+    .preview { display: none; background: #f0fbff; border-left: 4px solid #66ccff; padding: 10px; margin-top: 8px; border-radius: 6px; }
+    .preview img { max-width: 100%; border-radius: 4px; margin-bottom: 8px; }
     audio { display: none; }
+    a { color: #0077aa; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -27,15 +30,68 @@
   <section>
     <h2>Cool Places to Explore in Orlando</h2>
 
-    <div class="place"><strong>ICON Park</strong> – Giant wheel, shops, and restaurants. Super fun place to explore with friends.</div>
-    <div class="place"><strong>Lake Eola Park</strong> – Beautiful downtown lake with swan boats and live events.</div>
-    <div class="place"><strong>Universal CityWalk</strong> – No ticket needed to hang out, get food, and catch music or shows.</div>
-    <div class="place"><strong>Gatorland</strong> – Classic Florida spot with gators, zip lines, and animal shows.</div>
-    <div class="place"><strong>Orlando Science Center</strong> – Interactive exhibits, planetarium, and more for curious minds.</div>
-    <div class="place"><strong>The Florida Mall</strong> – Giant indoor mall with tons of stores and food spots.</div>
-    <div class="place"><strong>Andretti Indoor Karting</strong> – Go-karts, arcade, bowling, and yes—VR!</div>
-    <div class="place"><strong>Icebar Orlando</strong> – Literally a frozen bar where everything’s made of ice (don't lick the walls).</div>
-    <div class="place"><strong>Wekiwa Springs</strong> – Chill natural springs just outside the city—perfect for swimming and relaxing.</div>
+    <button class="place-btn">ICON Park</button>
+    <div class="preview">
+      <img src="https://www.iconparkorlando.com/wp-content/uploads/2022/01/WheelNight.jpg" alt="ICON Park">
+      <p>🎡 A huge observation wheel with shops, dining, and entertainment. Great views and photo ops!</p>
+      <a href="https://goo.gl/maps/vDkjEjCwWe7JXUz86" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Lake Eola Park</button>
+    <div class="preview">
+      <img src="https://www.visitorlando.com/imager/s3_us-east-1_amazonaws_com/orlando-2021/images/large/lake-eola-park-1500x1000_3a71c882fe09e80f85ad7b245bcb994e.jpg" alt="Lake Eola Park">
+      <p>🦢 A peaceful lake in downtown Orlando with swan boats, playgrounds, and city views.</p>
+      <a href="https://goo.gl/maps/EtTZV6szH3RPvCRh8" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Universal CityWalk</button>
+    <div class="preview">
+      <img src="https://media.cntraveler.com/photos/5da8f142667d0f0008f85bc4/16:9/w_2560%2Cc_limit/Universal-CityWalk_Universal-Orlando-Resort-2019.jpg" alt="Universal CityWalk">
+      <p>🍕 Fun food, live music, and shopping with free entry right outside Universal Studios.</p>
+      <a href="https://goo.gl/maps/7ErYpxZ5EvmLDm7c7" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Gatorland</button>
+    <div class="preview">
+      <img src="https://www.gatorland.com/wp-content/uploads/2019/03/alligator-zipline-gatorland.jpg" alt="Gatorland">
+      <p>🐊 Classic Florida fun with alligators, zip lines, and exciting animal shows.</p>
+      <a href="https://goo.gl/maps/3ZqpqtMqgmTyJ2NS6" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Orlando Science Center</button>
+    <div class="preview">
+      <img src="https://www.osc.org/wp-content/uploads/2021/08/OSC-Curious-Minds-Robotics-Lab.jpg" alt="Orlando Science Center">
+      <p>🔬 Explore interactive exhibits, STEM fun, and space & dinosaur zones!</p>
+      <a href="https://goo.gl/maps/xKmToRKSRyLKwBAS6" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">The Florida Mall</button>
+    <div class="preview">
+      <img src="https://www.simon.com/mall/florida-mall/content/dam/mallsweb/florida-mall/2020-fm-interior-hero.jpg" alt="The Florida Mall">
+      <p>🛍️ A giant indoor mall with tons of stores, food court, and even a Crayola Experience!</p>
+      <a href="https://goo.gl/maps/KM6S3Ku1G14ycKN27" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Andretti Indoor Karting</button>
+    <div class="preview">
+      <img src="https://andrettikarting.com/wp-content/uploads/2021/07/orlando-arcade-scaled.jpg" alt="Andretti Karting">
+      <p>🏎️ Indoor kart racing, VR experiences, bowling, arcade games, and more!</p>
+      <a href="https://goo.gl/maps/3Qv3nWT8DzFUKjYT9" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Icebar Orlando</button>
+    <div class="preview">
+      <img src="https://icebarorlando.com/wp-content/uploads/2019/03/slider-home-3.jpg" alt="Icebar Orlando">
+      <p>❄️ Step into a frozen wonderland where even the cups are made of ice!</p>
+      <a href="https://goo.gl/maps/W9Kaq8vmsGELD7Lv9" target="_blank">📍 View on Google Maps</a>
+    </div>
+
+    <button class="place-btn">Wekiwa Springs</button>
+    <div class="preview">
+      <img src="https://www.floridastateparks.org/sites/default/files/styles/hero_image/public/08-10-20%20Wekiwa%20Springs%20State%20Park%201.jpg" alt="Wekiwa Springs">
+      <p>🏞️ Crystal-clear springs for swimming, kayaking, and relaxing in nature.</p>
+      <a href="https://goo.gl/maps/61Qz4TXqWqKnF9nTA" target="_blank">📍 View on Google Maps</a>
+    </div>
   </section>
 
   <script>
@@ -43,6 +99,16 @@
       const audio = document.getElementById('birthday-audio');
       audio.play();
     });
+
+    const buttons = document.querySelectorAll('.place-btn');
+    const previews = document.querySelectorAll('.preview');
+
+    buttons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        previews[index].style.display = previews[index].style.display === 'block' ? 'none' : 'block';
+      });
+    });
   </script>
 </body>
 </html>
+
